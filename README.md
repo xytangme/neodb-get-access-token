@@ -15,7 +15,15 @@ A utility script to help you obtain an access token for the NeoDB API through OA
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-2. Install dependencies using uv:
+2. Create and activate a virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Unix/macOS
+# or
+# .venv\Scripts\activate  # On Windows
+```
+
+3. Install dependencies using uv:
 ```bash
 uv pip install .
 ```
@@ -53,4 +61,4 @@ Make sure the redirect URL matches what you've configured in your NeoDB applicat
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
