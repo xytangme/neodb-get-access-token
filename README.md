@@ -17,10 +17,10 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 2. Create and activate a virtual environment:
 ```bash
-python -m venv .venv
+uv venv
 source .venv/bin/activate  # On Unix/macOS
 # or
-# .venv\Scripts\activate  # On Windows
+.venv\Scripts\activate     # On Windows
 ```
 
 3. Install dependencies using uv:
